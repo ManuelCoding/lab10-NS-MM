@@ -21,6 +21,15 @@ def exp(a, b): ab
 
 import math
 
+
+
+def square_root(a):
+    if a < 0:
+        raise ValueError
+    return math.sqrt(a) # raise ValueError if a < 0
+def hypotenuse(a, b):
+    math.hypot(a, b) # can have negative nums
+
 # First example
 def add(a, b): 
     return a + b
